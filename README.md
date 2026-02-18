@@ -1,10 +1,10 @@
-## 🌦️ Advanced AI Weather Web App
+# 🌦️ Advanced AI Weather Web App
 
 A fully dynamic, futuristic Weather Forecast Web Application built using HTML, CSS, and JavaScript with real-time API integration, animated environments, AI suggestions, and immersive visual effects.
 
 This project goes beyond a simple weather app — it delivers a cinematic weather experience with real-world data, realistic sky simulations, and interactive UI components.
 
-🚀 Features
+## 🚀 Features
 🌍 Core Weather Features
 
 Real-time weather data
@@ -29,7 +29,7 @@ Satellite imagery
 
 Live storm tracking
 
-🎨 Dynamic Visual Environment
+## 🎨 Dynamic Visual Environment
 
 Background changes automatically based on:
 
@@ -59,7 +59,7 @@ Volumetric clouds
 
 Parallax sky depth
 
-🌞 Sky Simulation System
+## 🌞 Sky Simulation System
 
 Animated sun arc path (moves based on real time)
 
@@ -69,7 +69,7 @@ Realistic celestial positioning
 
 Day → Evening → Night transitions
 
-📊 Interactive Data Visualization
+## 📊 Interactive Data Visualization
 
 Temperature charts
 
@@ -79,7 +79,7 @@ Hidden chart panel (toggle button)
 
 Dynamic graph rendering
 
-🤖 Smart AI Feature
+## 🤖 Smart AI Feature
 
 AI Outfit Suggestions
 
@@ -93,7 +93,7 @@ wind
 
 condition
 
-🎤 Smart Controls
+## 🎤 Smart Controls
 
 Voice search for city
 
@@ -103,7 +103,7 @@ Dynamic buttons
 
 Glass hover effects
 
-🌐 3D & Advanced Visualization
+## 🌐 3D & Advanced Visualization
 
 3D Weather Globe Map
 
@@ -113,7 +113,7 @@ Interactive map layers
 
 Satellite view
 
-📱 Progressive Web App (PWA)
+## 📱 Progressive Web App (PWA)
 
 Installable like mobile app
 
@@ -125,7 +125,7 @@ Fast loading
 
 App-like experience
 
-🧠 Tech Stack
+## 🧠 Tech Stack
 
 HTML5
 
@@ -143,7 +143,7 @@ Chart rendering
 
 PWA manifest + service worker
 
-📦 Installation
+## 📦 Installation
 git clone https://github.com/yourusername/weather-app.git
 cd weather-app
 open index.html
@@ -157,7 +157,7 @@ Netlify
 
 Vercel
 
-🔑 API Setup
+## 🔑 API Setup
 
 Replace API key inside script:
 
@@ -166,7 +166,7 @@ const API_KEY = "YOUR_API_KEY";
 
 Get key from your weather API provider.
 
-🎯 Future Improvements
+## 🎯 Future Improvements
 
 Weather history analytics
 
@@ -180,15 +180,15 @@ Climate comparison mode
 
 Smart home weather automation
 
-📸 Preview
+## 📸 Preview
 
 (Add screenshots here)
 
-🧑‍💻 Author
+## 🧑‍💻 Author
 
 Aryan
 
-⭐ Support
+## ⭐ Support
 
 If you like this project:
 
