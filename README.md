@@ -182,11 +182,17 @@ Smart home weather automation
 
 ## 📸 Preview
 
-(Add screenshots here)
+Light Mode Desktop : <img width="1897" height="915" alt="image" src="https://github.com/user-attachments/assets/55923c66-290f-475e-a7d5-84a498286090" />
+
+Dark Mode Desktop : <img width="1893" height="912" alt="image" src="https://github.com/user-attachments/assets/87e273c0-0a81-4f65-b78f-6f6d84cef38f" />
+
+Light Mode Mobile : <img width="368" height="805" alt="image" src="https://github.com/user-attachments/assets/d3027028-eae7-4d1c-ba17-f5377812065e" />
+
+
 
 ## 🧑‍💻 Author
 
-Aryan
+Aryan Palaspagar
 
 ## ⭐ Support
 
