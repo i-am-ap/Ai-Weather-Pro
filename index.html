@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Weather Pro</title>
+
+<link rel="stylesheet" href="styles.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+
+</head>
+<body>
+
+<div id="rain"></div>
+<div id="snow"></div>
+<div id="fog"></div>
+<div id="sunrise"></div>
+<div id="lightning"></div>
+
+<div id="sky-bg"></div>
+<div id="stars"></div>
+<div id="clouds"></div>
+
+
+<div class="container glass">
+
+<h1>🌦 AI Weather Pro</h1>
+
+<div class="searchBox">
+
+<input id="cityInput" placeholder="Search city..." />
+
+<button class="btn search" onclick="getWeather()">Search</button>
+<button class="btn loc" onclick="getLocation()">📍</button>
+<button class="btn mic" onclick="voiceSearch()">🎤</button>
+<button class="btn theme" onclick="toggleTheme()">🌙</button>
+
+</div>
+
+<div id="alert"></div>
+
+<div id="weather"></div>
+
+<button class="toggleChart" onclick="toggleChart()">📊 Show Chart</button>
+
+<canvas id="chart" style="display:none;"></canvas>
+
+<h2>Outfit Suggestion 👕</h2>
+<div id="outfit"></div>
+
+<h2>7 Day Forecast</h2>
+<div id="forecast" class="forecast"></div>
+
+<h2>Satellite View 🛰</h2>
+<iframe id="satellite"></iframe>
+
+<!-- <h2>3D Sky</h2> -->
+<!-- <div id="threeContainer"></div> -->
+
+</div>
+
+<script src="script.js"></script>
+
+<div id="lightning" class="lightning"></div>
+
+</body>
+</html>
