@@ -1,4 +1,4 @@
-const apiKey="327e80a93f674c6197d74951261802";
+const apiKey= [Paste your api key];
 
 /* MAIN FETCH */
 
