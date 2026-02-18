@@ -1,12 +1,18 @@
-const apiKey= "API_KEY";
+const API_URL = "/api/weather";
 
 /* MAIN FETCH */
 
 async function getWeather(city){
+
+try{
+
 if(!city) city=document.getElementById("cityInput").value;
 
-let res=await fetch(`https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${city}&days=7&aqi=yes&alerts=yes`);
-let data=await res.json();
+let res = await fetch(`${API_URL}?city=${city}`);
+
+if(!res.ok) throw new Error("API failed");
+
+let data = await res.json();
 
 showWeather(data);
 forecast(data);
@@ -16,11 +22,16 @@ alerts(data);
 satellite(data.location.lat,data.location.lon);
 sky3D(data.current.condition.text);
 
-/* dynamic systems */
 lightningEffect(data.current.condition.text);
 setDynamicBackground(data.current.condition.text,data.current.is_day);
-weatherEffects(data.current.condition.text,data.current.is_day); // ✅ ADD THIS
+weatherEffects(data.current.condition.text,data.current.is_day);
+
+}catch(err){
+console.error(err);
+alert("Weather failed to load. Check city name or API.");
 }
+}
+
 
 
 
@@ -130,7 +141,7 @@ document.getElementById("outfit").innerHTML=text;
 function alerts(d){
 
 let container=document.getElementById("alert");
-let a=d.alerts.alert;
+let a=d.alerts?.alert || [];
 
 if(!a.length){
 container.innerHTML="";
