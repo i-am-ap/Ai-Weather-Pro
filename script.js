@@ -6,14 +6,23 @@ async function getWeather(city){
 
 try{
 
-if(!city) city=document.getElementById("cityInput").value;
+if(!city)
+city=document.getElementById("cityInput").value;
 
-let res = await fetch(`${API_URL}?city=${city}`);
+let res = await fetch(`/api/weather?city=${city}`);
 
-if(!res.ok) throw new Error("API failed");
+if(!res.ok){
+throw new Error("API failed");
+}
 
 let data = await res.json();
 
+/* if API returns error object */
+if(data.error){
+throw new Error(data.error.message || "Invalid city");
+}
+
+/* render UI */
 showWeather(data);
 forecast(data);
 chart(data);
@@ -27,9 +36,15 @@ setDynamicBackground(data.current.condition.text,data.current.is_day);
 weatherEffects(data.current.condition.text,data.current.is_day);
 
 }catch(err){
+
 console.error(err);
-alert("Weather failed to load. Check city name or API.");
+
+document.getElementById("weather").innerHTML =
+"<p style='color:red;font-weight:bold'>⚠ Unable to load weather</p>";
+
+
 }
+
 }
 
 
