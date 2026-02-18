@@ -39,9 +39,7 @@ weatherEffects(data.current.condition.text,data.current.is_day);
 
 console.error(err);
 
-document.getElementById("weather").innerHTML =
-"<p style='color:red;font-weight:bold'>⚠ Unable to load weather</p>";
-
+alert("Weather failed to load. Check city name or API.");
 
 }
 
