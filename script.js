@@ -39,7 +39,7 @@ weatherEffects(data.current.condition.text,data.current.is_day);
 
 console.error(err);
 
-alert("Weather failed to load. Check city name or API.");
+// alert("Weather failed to load. Check city name or API.");
 
 }
 

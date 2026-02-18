@@ -1,5 +1,19 @@
 {
   "dependencies": {
-    "dotenv": "^17.3.1"
-  }
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "node-fetch": "^3.3.2"
+  },
+  "name": "ai-weather-pro",
+  "version": "1.0.0",
+  "description": "A fully dynamic, futuristic Weather Forecast Web Application built using HTML, CSS, and JavaScript with real-time API integration, animated environments, AI suggestions, and immersive visual effects.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
